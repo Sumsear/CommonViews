@@ -1,0 +1,2 @@
+# CommonViews
+Simple view encapsulation
