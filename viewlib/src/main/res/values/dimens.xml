@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="view_root_distance">16dp</dimen>
+    <dimen name="view_view_distance">8dp</dimen>
+    <dimen name="view_content_distance">4dp</dimen>
+    <dimen name="place_holder_view">@dimen/view_view_distance</dimen>
+
+    <dimen name="xxl_text_size">32sp</dimen>
+    <dimen name="xl_text_size">20sp</dimen>
+    <dimen name="title_text_size">18sp</dimen>
+    <dimen name="large_text_size">16sp</dimen>
+    <dimen name="normal_text_size">14sp</dimen>
+    <dimen name="little_text_size">12sp</dimen>
+
+    <dimen name="common_height">48dp</dimen>
+    <dimen name="toolBar_height">@dimen/common_height</dimen>
+    <dimen name="button_height">45dp</dimen>
+    <dimen name="button_margin">18dp</dimen>
+    <dimen name="bootom_navigation_bar">50dp</dimen>
+
+    <!--popupWindow-->
+    <dimen name="popup_item_height">46dp</dimen>
+    <dimen name="popup_item_icon_width01">16dp</dimen>
+    <dimen name="popup_item_icon_width02">19dp</dimen>
+    <dimen name="popup_item_icon_height">18dp</dimen>
+
+    <dimen name="tabLayout_height">38dp</dimen>
+    <dimen name="item_height_margin">8dp</dimen>
+
+</resources>

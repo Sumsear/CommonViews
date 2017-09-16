@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparency"
+    android:orientation="vertical"
+    >
+
+    <!--占位 view-->
+    <View
+        android:id="@+id/placeholder_view"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:background="@color/green"
+        android:visibility="gone"/>
+
+    <!--左侧navigation-->
+    <RelativeLayout
+        style="@style/Widget.AppCompat.Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolBar_height"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:id="@+id/left_contain_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:gravity="center_vertical">
+
+            <!--nav image-->
+            <ImageView
+                android:id="@+id/left_iv"
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:contentDescription="@string/app_name"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp"
+                android:scaleType="centerInside"
+                />
+
+            <!--nav text-->
+            <TextView
+                android:id="@+id/left_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|start"
+                android:paddingLeft="@dimen/view_view_distance"
+                android:paddingRight="@dimen/view_view_distance"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <!--副标题区-->
+        <LinearLayout
+            android:id="@+id/subtitle_contain_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/view_view_distance"
+            android:layout_marginRight="@dimen/view_view_distance"
+            android:layout_toEndOf="@id/left_contain_ll"
+            android:layout_toLeftOf="@+id/right_contain_ll"
+            android:layout_toRightOf="@id/left_contain_ll"
+            android:layout_toStartOf="@+id/right_contain_ll"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <!--主标题-->
+            <TextView
+                android:id="@+id/sub_head_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:textSize="16sp"
+                android:maxLines="1"
+                android:maxLength="8"
+                android:ellipsize="end"
+                android:visibility="gone"
+                />
+
+            <!--副标题-->
+            <TextView
+                android:id="@+id/sub_subhead_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:textSize="13sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <!--主题区-->
+        <LinearLayout
+            android:id="@+id/center_contain_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_toEndOf="@id/left_contain_ll"
+            android:layout_toLeftOf="@+id/right_contain_ll"
+            android:layout_toRightOf="@id/left_contain_ll"
+            android:layout_toStartOf="@+id/right_contain_ll"
+            android:gravity="center">
+            <!--head title-->
+            <TextView
+                android:id="@+id/toolbar_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:textColor="@color/title_text_color"
+                android:textSize="20sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:visibility="gone"
+                />
+            <!--head image-->
+            <ImageView
+                android:id="@+id/toolbar_title_iv"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/app_name"
+                android:gravity="center"
+                android:scaleType="centerInside"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <!--右侧navigation-->
+        <LinearLayout
+            android:id="@+id/right_contain_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            >
+
+            <!--nav image-->
+            <ImageView
+                android:id="@+id/right_iv"
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/view_view_distance"
+                android:layout_marginRight="@dimen/view_view_distance"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerInside"/>
+
+            <!--nav text-->
+            <TextView
+                android:id="@+id/right_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|end"
+                android:paddingLeft="@dimen/view_view_distance"
+                android:paddingRight="@dimen/view_view_distance"
+                android:textColor="@color/white"
+                android:textSize="@dimen/title_text_size"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>
